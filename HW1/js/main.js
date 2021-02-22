@@ -20,10 +20,9 @@ const renderProduct = (product) => {
 };
 
 const renderProducts = (productsArray) => {
+  const productsNode = document.querySelector(".products");
   productsArray.forEach((product) => {
-    document
-      .querySelector(".products")
-      .insertAdjacentHTML("beforeend", renderProduct(product));
+    productsNode.insertAdjacentHTML("beforeend", renderProduct(product));
   });
 };
 
