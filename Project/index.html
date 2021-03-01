@@ -9,11 +9,17 @@
     <header class="main_menu">
       <h1 class="main_heding">Интернет-магазин</h1>
       <button class="btn-cart" type="button">Корзина</button>
+      <div class="basket basket_hidden"></div>
     </header>
     <main>
       <div class="products"></div>
     </main>
+    <script>
+      "use strict";
+      document.querySelector(".btn-cart").addEventListener("click", (event) => {
+        document.querySelector(".basket").classList.toggle("basket_hidden");
+      });
+    </script>
     <script src="./js/main.js"></script>
-    <script src="./js/task3.js"></script>
   </body>
 </html>
