@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Checkout example · Bootstrap v5.0</title>
+    <link
+      href="https://getbootstrap.com/docs/5.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
+      crossorigin="anonymous"
+    />
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+    <link
+      href="https://getbootstrap.com/docs/5.0/examples/checkout/form-validation.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="bg-light">
+    <div class="container">
+      <main>
+        <div class="row g-3">
+          <div class="col-md-7 col-lg-8">
+            <h4 class="mb-3">Заполните свои данные</h4>
+            <form id="main_form" class="needs-validation" novalidate>
+              <div class="row g-3">
+                <div class="col-12">
+                  <label for="name" class="form-label">Имя</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="name"
+                    placeholder="Введите ваше имя"
+                    required
+                  />
+                </div>
+
+                <div class="col-12">
+                  <label for="number" class="form-label">Номер телефона</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="number"
+                    placeholder="Номер телефона в формате +7(000)000-0000"
+                  />
+                </div>
+
+                <div class="col-12">
+                  <label for="email" class="form-label">Email</label>
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="email"
+                    placeholder="Ваш адрес электронной почты"
+                  />
+                </div>
+
+                <div class="col-12">
+                  <label for="coment" class="form-label">Комментарий</label>
+                  <textarea
+                    class="form-control"
+                    id="coment"
+                    placeholder="Оставьте комментарий "
+                  ></textarea>
+                </div>
+              </div>
+
+              <hr class="my-4" />
+
+              <button class="w-100 btn btn-primary btn-lg" type="submit">
+                Отправить
+              </button>
+            </form>
+          </div>
+        </div>
+      </main>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
