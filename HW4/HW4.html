@@ -32,7 +32,7 @@
       console.log(str.replaceAll("'", '"'));
 
       // 2. Шаблон, который заменяет одинарные кавычки на двойные, а в конструкциях типа aren't одинарная кавычка не заменяется на двойную
-      console.log(str.replace(/(\b')?(\B')/g, '"'));
+      console.log(str.replace(/\B'|'\B/g, '"'));
     </script>
   </body>
 </html>
